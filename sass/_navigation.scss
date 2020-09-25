@@ -4,10 +4,7 @@ Navigation
 Верхняя навигация. Включает в себя поиск по сайту, логотип, вход в личный кабинет
 
 Markup:
-    <div class="nav-wrap">
-        <div class="logo">
-            <img src="pattern-library/img/logo.png" alt="">
-        </div>
+
         <div class="navigation">
             <div class="search">
                 <input type="text" name="" id="">
@@ -16,14 +13,11 @@ Markup:
             <button>Прайс-лист</button>
             <button><img src="pattern-library/img/icons/profile_picture.png" alt="">Личный кабинет</button>
         </div>
-    </div>
 
 Styleguide Navigation
 */
 
-.nav-wrap {
-    display: flex;
-}
 .navigation {
     display: flex;
 }
+

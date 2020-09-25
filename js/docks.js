@@ -1,9 +1,9 @@
 window.addEventListener('DOMContentLoaded', function() {
     'use strict';
 
-    let dropdownMenu = require('./parts/dropdown-menu'),
-        menuLinks = require('./parts/menuLinks');
-
+    let menuLinks = require('./parts/menuLinks'),
+        toggleMenu = require('./parts/toggleMenu');
     dropdownMenu();
     menuLinks();
+    toggleMenu();
 })

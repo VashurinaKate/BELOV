@@ -27,13 +27,18 @@
         </a>
       </li>
       <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-buttons.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Buttons</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-menu.html">
-          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Menu</span>
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Menu</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-navigation.html">
-          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Navigation</span>
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Navigation</span>
         </a>
       </li>
     </ul>
@@ -48,7 +53,7 @@
         <h1 class="kss-title kss-title--level-1">
           <a class="kss-title__permalink" href="#kssref-navigation">
             <span class="kss-title__ref">
-              2
+              3
               <span class="kss-title__permalink-hash">
                   #Navigation
               </span>
@@ -110,6 +115,14 @@
 
           <div class="kss-description">
             <p>Верхняя навигация. Включает в себя поиск по сайту, логотип, вход в личный кабинет</p>
+<pre><code>    &lt;div class=&quot;navigation&quot;&gt;
+        &lt;div class=&quot;search&quot;&gt;
+            &lt;input type=&quot;text&quot; name=&quot;&quot; id=&quot;&quot;&gt;
+            &lt;button&gt;&lt;img src=&quot;pattern-library/img/icons/search.png&quot; alt=&quot;&quot;&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;button&gt;Прайс-лист&lt;/button&gt;
+        &lt;button&gt;&lt;img src=&quot;pattern-library/img/icons/profile_picture.png&quot; alt=&quot;&quot;&gt;Личный кабинет&lt;/button&gt;
+    &lt;/div&gt;</code></pre>
 
           </div>
 
@@ -123,17 +136,7 @@
 
 
           <div class="kss-modifier__example">
-                <div class="navigation">
-        <div class="logo">
-            <img src="pattern-library/img/logo.png" alt="">
-        </div>
-        <div class="search">
-            <input type="text" name="" id="">
-            <button><img src="pattern-library/img/icons/search.png" alt=""></button>
-        </div>
-        <button>Прайс-лист</button>
-        <button><img src="pattern-library/img/icons/profile_picture.png" alt="">Личный кабинет</button>
-    </div>
+            Markup:
             <div class="kss-modifier__example-footer"></div>
           </div>
 
@@ -143,21 +146,11 @@
             <summary>
                 Markup
             </summary>
-            <pre class="hljs"><code class="language-handlebars"><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navigation"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"logo"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"pattern-library/img/logo.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"search"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">""</span> <span class="hljs-attr">id</span>=<span class="hljs-string">""</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"pattern-library/img/icons/search.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Прайс-лист<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"pattern-library/img/icons/profile_picture.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>Личный кабинет<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml">Markup:</span></code></pre>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>css/styles.css</code>, line 149
+          Source: <code>css/styles.css</code>, line 200
         </div>
 
     </div>
