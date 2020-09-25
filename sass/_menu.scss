@@ -1,0 +1,78 @@
+/*
+Menu
+
+Главное меню
+
+Markup:
+<div class="menu menu--main">
+    <ul class="menu-item">
+        <li><a href="#">Продукты</a></li>
+        <li><a href="#">Где купить</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Поддержка</a></li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
+</div>
+
+Styleguide Menu
+*/
+.menu--main {
+    float: right;
+    border-radius: 4px;
+}
+.menu-item {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-item > li {
+    border-right: 0.5px solid rgba(255,255,255,0.5);
+}
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    background-color: $menu-bg;
+    border-radius: 4px;
+}
+.menu-item > li > a {
+    text-transform: uppercase;
+    line-height: 50px;
+    padding: 0 20px 0 20px;
+    position: relative;
+}
+
+.menu a:hover {
+    color: #efefef;
+    border-radius: 4px;
+}
+
+.menu a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 4px;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $menu-bg-hover;
+    z-index: -1;
+    transition: all 0.1s cubic-bezier(0.000, 0.590, 1.000, 0.260);
+}
+
+.menu-item > li > a:hover:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $menu-bg-hover;
+    z-index: -1;
+}
+@import '__menu-dropdown';
